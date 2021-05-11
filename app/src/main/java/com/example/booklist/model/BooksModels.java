@@ -1,6 +1,7 @@
 package com.example.booklist.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class BooksModels implements Serializable {
     private String bookName;

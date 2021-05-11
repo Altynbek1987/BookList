@@ -1,5 +1,6 @@
-package com.example.booklist;
+package com.example.booklist.adapter;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,17 +10,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.booklist.R;
 import com.example.booklist.interfaces.OnBookClickListener;
 import com.example.booklist.model.BooksModels;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
 
     private OnBookClickListener onBookClickListener;
 
-    private ArrayList<BooksModels> list;
-    public BookAdapter(ArrayList<BooksModels> list) {
+    private List<BooksModels> list;
+    public BookAdapter(List<BooksModels> list) {
         this.list = list;
     }
 
@@ -41,7 +43,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return list.size();
+        return 5;
+
     }
 
 
